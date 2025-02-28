@@ -7,8 +7,8 @@ RUN yum update -y && \
     yum clean all
 
 # Настраиваем SNMP
-RUN systemctl enable snmpd.service && \
-    systemctl enable snmptrapd.service
+# RUN systemctl enable snmpd.service
+RUN systemctl enable snmptrapd.service
 
 # Настраиваем Nginx
 RUN systemctl enable nginx.service
